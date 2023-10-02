@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [🎯 OOP school library](#-OOP school library)
+- [🎯 OOP school library](#-OOP_school_library)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -32,7 +32,8 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
+- **Implement Person class**
+- **Implemented teacher class**
 - **Implemented student class**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,7 +62,7 @@ Clone the project.
 Go to the project directory.
 
 ```bash
-  cd enumerable
+  cd oop-school-library
 ```
 
 
