@@ -9,6 +9,6 @@ class Classroom
 
   def add_student(student)
     @students << student
-    students.classroom = self
+    student.classroom = self
   end
 end
