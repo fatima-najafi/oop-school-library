@@ -23,7 +23,7 @@ class App
       puts "#{person.name} - #{person.class} - #{person.id}"
     end
   end
-
+# create person
   def create_person
     print 'Do you want to create a student (1) or a teacher (2)? '
     person_type = gets.chomp.to_i
@@ -45,6 +45,7 @@ class App
       puts 'Person not created!'
     end
   end
+ # create books
 
   def create_book
     print 'Title:'
@@ -54,6 +55,8 @@ class App
     @books << Book.new(title, author)
     puts 'Book created!'
   end
+
+  #creata rental
 
   def create_rental
     puts 'Choose a book from the list by number'
@@ -73,6 +76,7 @@ class App
     Rental.new(date, book, person)
     puts 'Rental created!'
   end
+ # create list_rentals
 
   def list_rentals
     puts 'Choose a person from the list by number'
