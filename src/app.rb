@@ -23,7 +23,7 @@ class App
       puts "#{person.name} - #{person.class} - #{person.id}"
     end
   end
-# create person.......................
+  # create person.......................
 
   def create_person
     print 'Do you want to create a student (1) or a teacher (2)? '
@@ -46,7 +46,7 @@ class App
       puts 'Person not created !'
     end
   end
- # create books.......................
+  # create books.......................
 
   def create_book
     print 'Title:'
@@ -57,7 +57,7 @@ class App
     puts 'Book created successfully!'
   end
 
-  #creata rental.......................
+  # creata rental.......................
 
   def create_rental
     puts 'Choose a book from the list by number'
@@ -77,7 +77,7 @@ class App
     Rental.new(date, book, person)
     puts 'Rental created successfully!'
   end
- # create list_rentals.......................
+  # create list_rentals.......................
 
   def list_rentals
     puts 'Choose a person from the list by number'
