@@ -1,4 +1,4 @@
- require_relative 'app'
+require_relative 'app'
 
 def display
   puts 'Please choose an option by entering a number:'
@@ -25,9 +25,10 @@ def run_app(app)
     display
     input = gets.chomp
 
-        if menu_options.key?(input)
+    if menu_options.key?(input)
       run = menu_options[input]
       break if run == :exit
+
       app.send(run)
     else
       puts 'Enter the correct option: '
@@ -44,4 +45,3 @@ def main
 end
 
 main
-
