@@ -35,14 +35,14 @@ class App
       print 'Whats the parent permission? (y/n) '
       parent_permission = gets.chomp == 'y'
       @people << Student.new(name, age, parent_permission)
-      puts 'Student created!'
+      puts 'Student created successfully!'
     elsif person_type == 2
       print 'Specialization:'
       specialization = gets.chomp
       @people << Teacher.new(name, age, specialization)
-      puts 'Teacher created!'
+      puts 'Teacher created successfully!'
     else
-      puts 'Person not created!'
+      puts 'Person not created !'
     end
   end
  # create books
@@ -53,7 +53,7 @@ class App
     print 'Author:'
     author = gets.chomp
     @books << Book.new(title, author)
-    puts 'Book created!'
+    puts 'Book created successfully!'
   end
 
   #creata rental
@@ -74,7 +74,7 @@ class App
     puts 'Date: '
     date = gets.chomp
     Rental.new(date, book, person)
-    puts 'Rental created!'
+    puts 'Rental created successfully!'
   end
  # create list_rentals
 
