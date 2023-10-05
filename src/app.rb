@@ -1,10 +1,10 @@
-require_relative './person'
-require_relative './trimmer_decorator'
-require_relative './capitalize_decorator'
-require_relative './book'
-require_relative './rental'
-require_relative './student'
-require_relative './teacher'
+require_relative 'person'
+require_relative 'trimmer_decorator'
+require_relative 'capitalize_decorator'
+require_relative 'book'
+require_relative 'rental'
+require_relative 'student'
+require_relative 'teacher'
 
 
 class App
@@ -13,19 +13,19 @@ class App
     @books = []
     @rentals = []
   end
-  
-# list of books..................
+
+  # list of books..................
 
   def list_books
     puts(@books.map { |book| "Title: \"#{book.title}\", Author \"#{book.author}\"" })
   end
 
-# list of people..............
+  # list of people..............
 
   def list_people
     puts(@people.map { |person| "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" })
   end
-#create person.................
+  # create person.................
 
   def create_person
     print 'Do you want to create a Student (1) or a Teacher (2)? [Input the number]: '
@@ -47,7 +47,7 @@ class App
     puts 'Person Created Successfully'
   end
 
-  #create book..............
+  # create book..............
   def create_book
     print 'Title: '
     title = gets.chomp
@@ -56,7 +56,7 @@ class App
     @books << Book.new(title, author)
     puts 'Book Created Successfully'
   end
-# create rental.....................
+  # create rental.....................
 
   def create_rental
     puts 'Select a book from the following list by number'
@@ -72,8 +72,8 @@ class App
     @rentals << Rental.new(date, @books[book_idx], @people[person_idx])
     puts 'Rental Created Successfully'
   end
- # create list_rentals..............
- 
+  # create list_rentals..............
+
   def list_rentals
     print 'ID of person: '
     person_id = gets.chomp.to_i
@@ -85,4 +85,3 @@ class App
          end)
   end
 end
-

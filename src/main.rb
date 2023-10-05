@@ -1,5 +1,4 @@
-
-require_relative './app'
+require_relative 'app'
 
 puts "Welcome to School Library App!\n\n"
 MENU = "Please choose an option by entering a number:\n\
