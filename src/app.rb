@@ -10,17 +10,18 @@ class App
   def initialize
     @people = []
     @books = []
+    @rentals = []
   end
 
   def list_books
     @books.each do |book|
-      puts "#{book.title} by #{book.author} on #{book.rentals.count} rentals"
+      puts "Title: \"#{book.title}\", Author: #{book.author}"
     end
   end
 
   def list_people
     @people.each do |person|
-      puts "#{person.name} - #{person.class} - #{person.id}"
+     puts "[#{person.person_type}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
   end
   # create person.......................
