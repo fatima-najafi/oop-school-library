@@ -37,18 +37,6 @@ def run_app(app)
   puts 'Thank you for using my app!'
 end
 
-#     if menu_options.key?(input)
-#       run = menu_options[input]
-#       app.send(run)
-#       break if run == :exit
-#     else
-#       puts 'Enter the correct option: '
-#     end
-#   end
-
-#     puts 'Thank you for using my app!'
-# end
-
 def main
   app = App.new
   puts 'Welcome to the School Library App!'
