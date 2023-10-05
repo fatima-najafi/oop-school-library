@@ -23,7 +23,7 @@ class App
       puts "#{person.name} - #{person.class} - #{person.id}"
     end
   end
-
+ # Create person:  .................
   def create_person
     print 'Do you want to create a student (1) or a teacher (2)? '
     person_type = gets.chomp.to_i
@@ -35,16 +35,18 @@ class App
       print 'Whats the parent permission? (y/n) '
       parent_permission = gets.chomp == 'y'
       @people << Student.new(name, age, parent_permission)
-      puts 'Student created!'
+      puts 'Student created successfully!'
     elsif person_type == 2
       print 'Specialization:'
       specialization = gets.chomp
       @people << Teacher.new(name, age, specialization)
-      puts 'Teacher created!'
+      puts 'Teacher created successfully!'
     else
       puts 'Person not created!'
     end
   end
+
+  # Create books ......................
 
   def create_book
     print 'Title:'
@@ -52,9 +54,11 @@ class App
     print 'Author:'
     author = gets.chomp
     @books << Book.new(title, author)
-    puts 'Book created!'
+    puts 'Book created successfully!'
   end
 
+  # create rental .......................
+  
   def create_rental
     puts 'Choose a book from the list by number'
     @books.each_with_index do |book, index|
