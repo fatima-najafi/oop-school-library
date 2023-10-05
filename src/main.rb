@@ -34,8 +34,6 @@ def run_app(app)
       puts 'Enter the correct option: '
     end
   end
-
-  puts 'Thank you for using my app!'
 end
 
 def main
