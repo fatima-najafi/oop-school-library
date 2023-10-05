@@ -60,16 +60,16 @@ class App
 
   def create_rental
     puts 'Select a book from the following list by number'
-    @books.map.with_index { |book, idx| puts "#{idx}) Title: \"#{book.title}\", Author: #{book.author}" }
-    book_idx = gets.chomp.to_i
+    @books.map.with_index { |book, index| puts "#{index}) Title: \"#{book.title}\", Author: #{book.author}" }
+    book_index = gets.chomp.to_i
     puts 'Select a person from the following list by number (not ID)'
-    @people.map.with_index do |person, idx|
-      puts "#{idx}) Name: \"#{person.name}\", ID: #{person.id}, Age: #{person.age}"
+    @people.map.with_index do |person, index|
+      puts "#{index}) Name: \"#{person.name}\", ID: #{person.id}, Age: #{person.age}"
     end
-    person_idx = gets.chomp.to_i
+    person_index = gets.chomp.to_i
     print 'Date (YYYY/MM/DD): '
     date = gets.chomp
-    @rentals << Rental.new(date, @books[book_idx], @people[person_idx])
+    @rentals << Rental.new(date, @books[book_index], @people[person_index])
     puts 'Rental Created Successfully'
   end
   # create list_rentals..............
